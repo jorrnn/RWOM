@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <img src="1.png" class="logo">
+        <h4>RWOM</h4>
+        <nav>
+            <a href="index.html"><img src=""></a>
+            <div class="navLinks" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"><b>HOME</b></a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="main.html">NEWCRIN</a></li>
+                    <li><a href="program.html">PROGRAMS</a></li>
+                    <!-- <li><a href="blog.html">NEWCRIN BLOG</a></li> -->
+                    <li><a href="contact.html">CONTACT US</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>We're here for you! </h1>
+        <p>if you would like to talk to us, please call us at +2348033558254 or send an email to kayodeoikumawoyi@gmail.com</p> 
+   </section>
+
+<!-------- contact us -------->
+
+<section class="location">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.5830682850005!2d-73.94851109008064!3d40.66112017128205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b7acbce2543%3A0xd78868714d9ed679!2sMaple%20St%2C%20Brooklyn%2C%20NY%2C%20USA!5e0!3m2!1sen!2sng!4v1691186264874!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+
+<section class="contact-us">
+
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Orita Obele, oppostise bovas petrol station, Akure</h5>
+                    <p>NIGERIA, ONDO STATE</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>08033558254, 08039437481</h5>
+                    <p>Monday to saturday, 8AM to 5PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>kayodeoikumawoyi@gmail.com</h5>
+                    <p>Email us if you need any help</p>
+                </span>
+            </div>
+        </div>
+        
+        <div class="contact-col">
+            <form action="email.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="text" name="email" placeholder="Enter Email Address" required>
+                <input type="text" name="subject" placeholder="Enter your qualifications" required>
+                <textarea rows="8" name="message" placeholder="message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">send message</button>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+<!------- footer -------->
+
+<section class="footer">
+    <h4>Connect with us</h4>
+    <p>copyright - RULERS ASSEMBLY MERCY ARENA 2024. All right reserved. Designed and Developed by BIGJOHN.</p>
+    <div class="icons">
+        <i class="fa fa-instagram"></i>
+        <a href="https://wa.link/oy73vg"><i class="fa fa-whatsapp"></i></a>
+        <i class="fa fa-facebook"></i>
+    </div>
+</section>
+
+
+<!--------JavaScript for Toggle Menu-------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+
+    </script>
+
+
+
+</body>
+</html>

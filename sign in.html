@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="form.js" defer></script>
+    <title>NEWCRIN Registration</title>
+    <link rel="shortcut icon" class="x-icon" href="20.jfif">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!---headerrr--->
+    <section class="headerrr">
+    <img src="1.png" class="logo">
+    <h4>RWOM</h4>
+        <nav>
+            <a href="index.html"><img src=""></a>
+            <div class="navLinks" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"><b>HOME</b></a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="main.html">NEWCRIN</a></li>
+                    <li><a href="program.html">PROGRAMS</a></li>
+                    <!-- <li><a href="blog.html">NEWCRIN BLOG</a></li> -->
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+</section>
+    <div class="containerr">
+        <div class="login-box"> 
+            <h1>Log in</h1>
+            <form>
+                <div class="input-group">
+                    <i class="fa fa-envelope"></i>
+                    <input type="text" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <i class="fa fa-key"></i>
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button id="submit"><b>LOG IN</b></button>
+                <p>Forgot password?</p>
+            </form>
+            <h4><b>OR</b></h4>
+            <form>
+                <a href="" class="hero-btn"><i class="fa fa-google"></i>    <b>Continue with Google</b></a>
+            </form>
+            <p>By continuing you agree to our <a href="">Terms of use</a> and <a href="">Privacy Policy.</a></p>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-envelope"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+        
+    </div>
+
+<!--------JavaScript for Toggle Menu-------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+
+    </script>
+
+
+</body>
+</html>
